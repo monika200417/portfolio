@@ -338,7 +338,7 @@ h6 {
 }
 
 /* Mobile Navigation */
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -461,7 +461,46 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+} */
+/* Navbar Always Visible (Horizontal + Scrollable on Mobile) */
+.mobile-nav-toggle {
+  display: none !important; /* Hide hamburger completely */
 }
+
+.navmenu ul {
+  display: flex !important;          /* Always horizontal */
+  flex-direction: row !important;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  gap: 15px;                         /* Space between links */
+  overflow-x: auto;                  /* Allow scrolling if overflow */
+  white-space: nowrap;               /* Prevent wrapping */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
+}
+
+.navmenu ul::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for clean look */
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  padding: 10px 15px;
+  font-family: var(--nav-font);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--nav-hover-color);
+  border-bottom: 2px solid var(--nav-hover-color); /* Highlight active */
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
