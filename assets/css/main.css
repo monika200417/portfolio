@@ -11,6 +11,53 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+/* Always show nav links in a row */
+#navmenu ul {
+  display: flex !important;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navmenu li {
+  position: relative;
+}
+
+#navmenu a {
+  text-decoration: none;
+  padding: 8px 14px;
+  display: block;
+  font-weight: 500;
+  color: #000; /* change to your theme color */
+}
+
+#navmenu a:hover,
+#navmenu .active {
+  color: #007bff; /* highlight color */
+}
+
+/* Dropdown styling */
+#navmenu .dropdown ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#navmenu .dropdown:hover ul {
+  display: block;
+}
+
+/* Hide hamburger completely */
+.mobile-nav-toggle {
+  display: none !important;
+}
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
