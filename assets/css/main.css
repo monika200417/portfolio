@@ -861,6 +861,7 @@ section,
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .skill-card:hover {
@@ -890,6 +891,39 @@ section,
   .skills-grid {
     grid-template-columns: 1fr;
   }
+}
+.project-description {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.skill-card h4 {
+  padding-left: 30px;
+  text-align: left;
+  color: #63b8b2;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skill-card ul {
+  padding-left: 30px;
+}
+
+.skill-card li {
+  padding-left: 30px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.project-gallery img{
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.project-gallery img:hover{
+    transform:scale(1.03);
 }
 
 /*--------------------------------------------------------------
