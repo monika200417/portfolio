@@ -37,6 +37,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script>
+const lightbox = GLightbox({
+  selector: '.glightbox'
+});
+</script>
 
   
 </head>
@@ -79,73 +84,107 @@
   <main class="main">
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section class="portfolio section">
 
   <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
+    <h2>PDF Genie</h2>
     <p>
-      Explore my journey through Full Stack Development, Artificial Intelligence, IoT innovations, leadership experiences, and creative achievements.
+      AI-Powered PDF Question Answering Assistant that enables users
+      to upload documents and interact with them using natural language.
     </p>
   </div>
 
   <div class="container">
 
-    <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="skill-card">
 
-  <div class="col-lg-6 col-md-6">
-    <a href="mern-projects.html" class="text-decoration-none">
-      <div class="skill-card">
-        <h3>💻 MERN Stack Projects</h3>
-        <p>
-          Full Stack applications built using MongoDB,
-          Express.js, React and Node.js.
-        </p>
+      <h3 class="text-center mb-4">🤖 Project Overview</h3>
+
+      <p class="text-center">
+        PDF Genie is an AI-powered document assistant that enables users to upload PDF files and interact with them through natural language queries. By leveraging Retrieval-Augmented Generation (RAG) concepts, the system extracts relevant information from uploaded documents and generates accurate, context-aware responses, making document analysis faster and more efficient.
+      </p>
+
+      <div class="row mt-5">
+
+        <!-- Features -->
+        <div class="col-md-6">
+          <h4>✨ Key Features</h4>
+
+          <ul>
+            <li>PDF Upload & Processing</li>
+            <li>Natural Language Question Answering</li>
+            <li>Context-Based Response Generation</li>
+            <li>Semantic Search Across Documents</li>
+            <li>User-Friendly Interface</li>
+            <li>Fast Information Retrieval</li>
+          </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="col-md-6">
+          <h4>🛠 Tech Stack</h4>
+
+          <ul>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Google Gemini API</li>
+            <li>PDF Parsing Libraries</li>
+            <li>Vector Embeddings</li>
+            <li>RAG Architecture</li>
+          </ul>
+        </div>
+
       </div>
-    </a>
-  </div>
 
-  <div class="col-lg-6 col-md-6">
-    <a href="pdfgenie.html" class="text-decoration-none">
-      <div class="skill-card">
-        <h3>🤖 AI Projects</h3>
-        <p>
-          Artificial Intelligence, LLM and
-          intelligent document processing solutions.
-        </p>
+    </div>
+
+    <!-- Project Status -->
+
+    <div class="text-center my-5">
+
+      <span class="btn btn-secondary me-3">
+        <i class="bi bi-lock-fill"></i>
+        🔒 Source Code Private
+      </span>
+
+      <span class="btn btn-info">
+        <i class="bi bi-file-earmark-text"></i>
+        🎓 Academic Project
+      </span>
+
+    </div>
+
+    <!-- Screenshot Gallery -->
+
+    <section class="project-gallery">
+
+      <h2 class="text-center mb-2">Project Screenshot</h2>
+
+      <p class="text-center mb-5">
+        PDF upload and AI-powered document interaction interface.
+      </p>
+
+      <div class="row">
+
+        <div class="col-md-8 mx-auto">
+
+          <a href="assets/PDFGenie1.png" class="glightbox">
+            <img src="assets/PDFGenie1.png"
+                 class="img-fluid rounded shadow-sm"
+                 alt="PDF Genie Screenshot">
+          </a>
+
+        </div>
+
       </div>
-    </a>
-  </div>
 
-  <div class="col-lg-6 col-md-6">
-    <a href="mindtune.html" class="text-decoration-none">
-      <div class="skill-card">
-        <h3>🌐 IoT Projects</h3>
-        <p>
-          Smart systems integrating sensors,
-          automation and real-world problem solving.
-        </p>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-lg-6 col-md-6">
-    <a href="creative-leadership.html" class="text-decoration-none">
-      <div class="skill-card">
-        <h3>🌟 Creative & Leadership</h3>
-        <p>
-          Training, leadership activities,
-          event management and fashion creations.
-        </p>
-      </div>
-    </a>
-  </div>
-
-</div>
+    </section>
 
   </div>
 
 </section>
-
   </main>
 
   <footer id="footer" class="footer light-background">
