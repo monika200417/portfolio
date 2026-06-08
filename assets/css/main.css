@@ -925,6 +925,31 @@ section,
   margin-bottom: 10px;
   font-size: 16px;
 }
+.skill-badge {
+  display: inline-block;
+  background: #5fb3a8;
+  color: white;
+  padding: 8px 16px;
+  margin: 6px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+  background: #4a9b91;
+}
+.project-link{
+  color:#5fb3a8;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
 .project-gallery img{
     transition:0.3s ease;
     cursor:pointer;
