@@ -159,7 +159,7 @@ h6 {
 .navmenu a,
 .navmenu a:focus,
 .header-social-links a {
-  color: #ffffff !important;
+  color:#ffffff !important;
 }
 .header .logo {
   line-height: 1;
@@ -1594,4 +1594,22 @@ section,
   opacity: 0.8;
   font-weight: 500;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+/* Home page mobile menu only */
+@media (max-width: 1199px) {
+
+  .index-page.mobile-nav-active .navmenu ul {
+    background: rgba(20, 20, 20, 0.95);
+  }
+
+  .index-page.mobile-nav-active .navmenu a,
+  .index-page.mobile-nav-active .navmenu a:focus {
+    color: #ffffff !important;
+  }
+
+  .index-page.mobile-nav-active .navmenu a:hover,
+  .index-page.mobile-nav-active .navmenu .active {
+    color: #34b7a7 !important;
+  }
+
 }
