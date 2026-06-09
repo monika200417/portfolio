@@ -45,12 +45,11 @@
     display: none;
 }
 </style>
-  ======================================================== -->
+  
 </head>
 
 <body class="contact-page">
-
-  <header id="header" class="header about-header d-flex align-items-center sticky-top">
+<header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -66,27 +65,18 @@
           <li><a href="resume.html">Resume</a></li>
           <!-- <li><a href="services.html">Services</a></li> -->
           <li><a href="portfolio.html">Portfolio</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <div class="header-social-links">
+       
+      <a href="https://www.linkedin.com/in/monidevavarapu" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/monika200417" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100079944001043" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/moni._dear/?__pwa=1" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+        
+    </div>
     </div>
   </header>
 
@@ -135,12 +125,12 @@
         <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <label for="name-field" class="pb-2">Your Name</label>
               <input type="text" name="from_name" id="name-field" class="form-control" required>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <label for="email-field" class="pb-2">Your Email</label>
               <input type="email" class="form-control" name="from_email" id="email-field" required>
             </div>
@@ -156,11 +146,11 @@
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading" style="display:none;">Loading...</div>
-              <div class="error-message">⚠️ Oops! Something went wrong, please try again later.</div>
-              <div class="sent-message">✅ Thank you for reaching out! I'll get back to you soon.</div>
+              
 
-              <button type="submit">Send Message</button>
+              <button type="submit" class="contact-btn">
+  Send Message
+</button>
             </div>
 
           </div>
@@ -173,7 +163,10 @@
 </section>
 
 <!-- ✅ EmailJS Integration -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script>
   (function() {
     emailjs.init("yt6lDfpasUGdckyBf"); // Your Public Key
@@ -193,15 +186,42 @@
 
     emailjs.sendForm("service_4p86i0l", "template_q37o3e1", this)
       .then(() => {
-        loading.style.display = "none";
-        sentMessage.style.display = "block";
+
+        Toastify({
+          text: "Message sent successfully! 🚀",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          close: true,
+          style: {    
+            background: "#34b7a7"
+          }
+        }).showToast();
+
         form.reset();
-      }, (error) => {
-        loading.style.display = "none";
-        errorMessage.style.display = "block";
-        console.error("EmailJS Error:", error);
+      })
+      .catch((error) => {
+
+        Toastify({
+          text: "Failed to send message ❌",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          close: true,
+          style: {
+            background: "#dc3545"
+          }
+        }).showToast();
+
+        console.error(error);
       });
   });
+  const submitBtn = form.querySelector("button");
+
+submitBtn.disabled = true;
+submitBtn.innerText = "Sending...";
+submitBtn.disabled = false;
+submitBtn.innerText = "Send Message";
 </script>
 <!-- /Contact Section -->
 
@@ -210,14 +230,7 @@
   <footer id="footer" class="footer light-background">
 
     
-      <div class="header-social-links">
-       
-      <a href="https://www.linkedin.com/in/monidevavarapu" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/monika200417" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100079944001043" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/moni._dear/?__pwa=1" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-        
-    </div>
+      
 
   </footer>
 
