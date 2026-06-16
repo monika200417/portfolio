@@ -1589,8 +1589,10 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
+  --noop: ;
   /* Add your styles here */
-}.hero-copyright {
+}
+.hero-copyright { 
   margin-top: 60px;
   color: white;
   font-size: 12px;
@@ -1598,6 +1600,7 @@ section,
   font-weight: 500;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
+
 /* Home page mobile menu only */
 @media (max-width: 1199px) {
 
