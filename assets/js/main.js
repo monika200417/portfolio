@@ -38,6 +38,12 @@
     });
   });
 
+  // links opened with a #section (including redirects from old pages) land on that section
+  window.addEventListener('load', () => {
+    const target = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' });
+  });
+
   // active link = section crossing the middle of the viewport
   const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
   function setActive(id) {
