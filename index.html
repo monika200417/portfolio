@@ -1,137 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mounika Devavarapu | Full Stack Developer · AI &amp; LLM Enthusiast</title>
+  <meta name="description" content="Portfolio of Mounika Siva Priya Devavarapu, Full Stack Developer and AI &amp; LLM enthusiast: projects, skills, experience, résumé and contact details.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="Mounika Devavarapu | Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer | AI &amp; LLM Enthusiast. Visakram Inventory, Visakram Builders, DVK Global, Asvithi Trendz and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://monika200417.github.io/portfolio/assets/img/hero/hero-top.webp">
 
   <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
-<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-<link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
 
-<!-- Apple Touch Icon (iOS Home Screen) -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-
-<!-- Android/Chrome -->
-<link rel="icon" type="image/png" sizes="192x192" href="assets/img/web-app-manifest-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/img/web-app-manifest-512x512.png">
-
-<!-- Web App Manifest -->
-<link rel="manifest" href="assets/img/site.webmanifest">
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Mounika</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-                 <ul>
-  <li><a href="index.html" class="active">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="resume.html">Resume</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul> 
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="site-header" id="header">
+    <div class="bar">
+      <a class="brand" href="#home" aria-label="Mounika – back to top">Mounika<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navmenu" aria-label="Toggle navigation menu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+      <nav class="navmenu" id="navmenu" aria-label="Main">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-
-      
-      <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/monidevavarapu" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/monika200417" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100079944001043" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/moni._dear/?__pwa=1" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-        
-
-      </div>
-
     </div>
   </header>
 
-  <main class="main">
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <img class="hero-under" src="assets/img/hero/hero-reveal.webp" alt="" draggable="false">
+      <canvas id="mask" aria-hidden="true"></canvas>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+      <div class="hero-ui">
+        <div class="hero-card">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Mounika Siva Priya Devavarapu</h1>
+          <p class="role">Full Stack Developer | AI &amp; LLM Enthusiast</p>
+          <p class="lead">I build scalable web applications, explore AI-powered solutions, and leverage cloud technologies to create impactful digital experiences. Passionate about problem-solving, continuous learning, and transforming ideas into real-world products.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#about">About Me</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <p class="hero-hint" aria-hidden="true"><i class="bi bi-cursor"></i> Scratch the screen to see what’s underneath</p>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+    </section>
 
-      <img src=assets/portfoliobg.jpeg alt="" data-aos="fade-in">
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-left">
-          <div class="col-lg-9">
-            <h2>Mounika Siva Priya Devavarapu</h2>
-            <h4>Full Stack Developer | AI & Cloud Enthusiast</h4>
-
-<p>I build scalable web applications, explore AI-powered solutions, and leverage cloud technologies to create impactful digital experiences. Passionate about problem-solving, continuous learning, and transforming ideas into real-world products.
-</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
-
-            <p class="hero-copyright">
-              © 2026 Moni. All Rights Reserved.
-            </p>
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">01 · About</p>
+          <h2 id="about-title">About me</h2>
+        </header>
+        <div class="about-grid">
+          <figure class="portrait">
+            <img src="assets/Passportsizepic.jpg" alt="Portrait of Mounika Devavarapu" loading="lazy">
+          </figure>
+          <div>
+            <h3 class="sub">Full Stack Developer | AI &amp; LLM Enthusiast</h3>
+            <p>I am an Information Technology graduate with a strong interest in Full Stack Development, Artificial Intelligence, and Cloud Computing. My experience includes building web applications, AI-powered solutions, and cloud-based projects through internships, hackathons, and personal projects. I enjoy solving challenging problems, learning emerging technologies, and creating software that delivers meaningful impact.</p>
+            <p>Experienced in developing dynamic websites and applications using modern technologies. Solving problems, learning new tools, and contributing to impactful projects that add real value.</p>
+            <dl class="facts">
+              <div><dt>Birthday</dt><dd>17 August 2004</dd></div>
+              <div><dt>Age</dt><dd>21</dd></div>
+              <div><dt>City</dt><dd>Anakapalli, Andhra Pradesh</dd></div>
+              <div><dt>Degree</dt><dd>Graduation</dd></div>
+              <div><dt>Phone</dt><dd><a href="tel:+916302830566">+91 6302830566</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:monikadevavarapu@gmail.com">monikadevavarapu@gmail.com</a></dd></div>
+              <div><dt>Achievements</dt><dd>Ideathon 3rd Place &amp; AWS Trainer</dd></div>
+              <div><dt>Freelance</dt><dd>Available</dd></div>
+            </dl>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- ================= SKILLS ================= -->
+    <section class="section dark" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">02 · Skills</p>
+          <h2 id="skills-title">Technical skills</h2>
+          <p class="section-sub">Proficient in web development technologies with strong problem-solving and adaptability skills.</p>
+        </header>
+        <div class="skill-grid">
+          <article class="card win">
+            <h3><i class="bi bi-code-slash" aria-hidden="true"></i> Languages</h3>
+            <ul class="chips"><li>Python</li><li>C#</li><li>C</li><li>SQL</li><li>JavaScript</li><li>TypeScript</li></ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-window-stack" aria-hidden="true"></i> Frameworks &amp; Libraries</h3>
+            <ul class="chips"><li>React</li><li>Django</li><li>Node.js</li><li>Express</li><li>Next.js</li><li>Tailwind CSS</li><li>GSAP</li><li>Bootstrap</li><li>HTML5</li><li>CSS3</li></ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-cpu" aria-hidden="true"></i> AI &amp; LLM</h3>
+            <ul class="chips"><li>Prompt Engineering</li><li>RAG Concepts</li><li>LLM Basics</li></ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-database" aria-hidden="true"></i> Databases</h3>
+            <ul class="chips"><li>MySQL</li><li>MongoDB</li><li>PostgreSQL</li><li>Supabase / Firebase</li></ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-tools" aria-hidden="true"></i> Tools &amp; Technologies</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Postman</li><li>REST APIs</li><li>Vite</li><li>Vercel</li><li>GitHub Actions (CI/CD)</li><li>Vitest / Jest</li><li>Figma</li><li>SEO &amp; Accessibility (WCAG)</li><li>RBAC</li></ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-cloud" aria-hidden="true"></i> Cloud</h3>
+            <ul class="chips"><li>AWS (EC2, S3)</li><li>Amazon VPC</li><li>Google Cloud (Basics)</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">03 · Experience</p>
+          <h2 id="exp-title">Internships &amp; experience</h2>
+        </header>
+        <ol class="timeline">
+          <li>
+            <h3>Software Developer</h3>
+            <p class="org">Samify Software Solutions · Present</p>
+            <ul class="plain"><li>Build websites for clients</li><li>Handle digital marketing and content creation</li><li>Represent the company in business meetings</li></ul>
+          </li>
+          <li>
+            <h3>MERN Stack Intern</h3>
+            <p class="org">NASSCOM / SmartInternz</p>
+            <ul class="plain"><li>Built and tested full-stack features using MongoDB, Express, React and Node.js; worked on debugging, API integration and performance</li><li>Followed Agile-based development with sprint tasks and version control using Git</li></ul>
+          </li>
+          <li>
+            <h3>Python Intern</h3>
+            <p class="org">TechnoHacks</p>
+            <ul class="plain"><li>Developed Python programs focusing on problem-solving and logic building, with clean modular code and basic documentation</li></ul>
+          </li>
+          <li>
+            <h3>Google Cloud Generative AI Virtual Intern</h3>
+            <p class="org">SmartBridge</p>
+            <ul class="plain"><li>Learned cloud computing and Generative AI fundamentals; explored cloud-based deployment and AI application workflows</li></ul>
+          </li>
+          <li>
+            <h3>AWS and Entrepreneurship Trainer</h3>
+            <p class="org">JNTU college</p>
+            <ul class="plain"><li>Trained students for a week on AWS and Entrepreneurship concepts and earned ₹5,250</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section tint" id="projects" aria-labelledby="proj-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">04 · Projects</p>
+          <h2 id="proj-title">Selected projects</h2>
+          <p class="section-sub">Business systems, client websites, AI and IoT work. Click a project screenshot to browse its gallery.</p>
+        </header>
+
+        <div class="mini-grid">
+          <article class="card win mini" id="visakram-inventory">
+            <ul class="tags"><li>Inventory &amp; Procurement</li></ul>
+            <h3>Visakram Inventory</h3>
+            <p class="project-sub">Inventory and procurement system for a construction company.</p>
+            <ul class="plain"><li>Stock ledger, purchase orders, goods receipts, issue vouchers, supplier quotation comparison, transfers, wastage tracking and worker payroll</li><li>Five-role access control with multi-step approvals, project-wise data scoping, append-only audit log and reversal entries</li><li>133 passing tests, deployed on Vercel</li></ul>
+            <div class="actions"><a class="btn btn-primary" href="https://visakraminventory.vercel.app/inventory/login" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Visit site</a></div>
+          </article>
+          <article class="card win mini" id="visakram-builders">
+            <ul class="tags"><li>Construction Website</li></ul>
+            <h3>Visakram Builders</h3>
+            <p class="project-sub">Cinematic, scroll-driven construction website.</p>
+            <ul class="plain"><li>Led the Home Tour: a pinned section scrubbing a 32-second walkthrough video with scroll and ten synced chapter labels</li><li>Built the Services page with accessible, SEO-ready markup and optimized image and media delivery</li></ul>
+            <ul class="chips small"><li>React</li><li>TypeScript</li><li>Vite</li><li>GSAP</li></ul>
+            <div class="actions"><a class="btn btn-primary" href="https://visakrambuilders.com" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Visit site</a></div>
+          </article>
+          <article class="card win mini" id="dvk-global">
+            <ul class="tags"><li>Corporate Website</li></ul>
+            <h3>DVK Global</h3>
+            <p class="project-sub">Website for an insurance surveyors and loss assessment firm.</p>
+            <ul class="plain"><li>Responsive multi-page site for an IRDAI-licensed loss assessment firm</li><li>Services, director profile, testimonials, enquiry forms, WhatsApp contact links and animated carousel; deployed on Vercel</li></ul>
+            <ul class="chips small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="actions"><a class="btn btn-primary" href="https://www.dvkgisla.com/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Visit site</a><a class="btn btn-ghost" href="https://github.com/monika200417/DVKglobal" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a></div>
+          </article>
+          <article class="card win mini" id="asvithi-trendz">
+            <ul class="tags"><li>Team Project</li></ul>
+            <h3>Asvithi Trendz</h3>
+            <p class="project-sub">Catalog website for a women’s fashion store.</p>
+            <ul class="plain"><li>Responsive catalog with WhatsApp enquiries</li><li>PIN-protected admin portal for catalog management; deployed on Vercel</li></ul>
+            <div class="actions"><a class="btn btn-primary" href="https://www.asvithitrendz.com/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Visit site</a></div>
+          </article>
+        </div>
+
+        <!-- KaushalHub -->
+        <article class="project card win" id="kaushalhub">
+          <div class="project-media">
+            <a class="glightbox" href="assets/Kaushalhub1.png" data-gallery="kaushalhub" data-title="KaushalHub">
+              <img src="assets/Kaushalhub1.png" alt="KaushalHub platform home screen" loading="lazy">
+            </a>
+            <span class="more"><i class="bi bi-images" aria-hidden="true"></i> 7 screenshots</span>
+            <a class="glightbox sr-only" href="assets/Kaushalhub2.png" data-gallery="kaushalhub">KaushalHub screenshot 2</a>
+            <a class="glightbox sr-only" href="assets/Kaushalhub3.png" data-gallery="kaushalhub">KaushalHub screenshot 3</a>
+            <a class="glightbox sr-only" href="assets/Kaushalhub4.png" data-gallery="kaushalhub">KaushalHub screenshot 4</a>
+            <a class="glightbox sr-only" href="assets/Kaushalhub5.png" data-gallery="kaushalhub">KaushalHub dashboard</a>
+            <a class="glightbox sr-only" href="assets/Kaushalhub6.png" data-gallery="kaushalhub">KaushalHub projects</a>
+            <a class="glightbox sr-only" href="assets/Kaushalhub7.png" data-gallery="kaushalhub">KaushalHub projects, view 2</a>
+          </div>
+          <div class="project-body">
+            <ul class="tags"><li>MERN Stack</li><li>Ideathon · 3rd place</li></ul>
+            <h3>KaushalHub</h3>
+            <p class="project-sub">MERN stack skill development and collaboration platform.</p>
+            <p>KaushalHub is a MERN stack platform designed to help students discover, create, and collaborate on projects. It provides a centralized space for showcasing skills, connecting with peers, and building real-world experience.</p>
+            <p>Implemented JWT authentication, role-based access, and project and resource management with scalable backend workflows.</p>
+            <div class="cols">
+              <div>
+                <h4>Key features</h4>
+                <ul class="plain">
+                  <li>User authentication &amp; role-based access</li>
+                  <li>Project creation &amp; management</li>
+                  <li>Student collaboration platform</li>
+                  <li>Skill showcase profiles</li>
+                  <li>Responsive user interface</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Tech stack</h4>
+                <ul class="chips small"><li>MongoDB</li><li>Express.js</li><li>React.js</li><li>Node.js</li><li>JWT Authentication</li></ul>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://monika200417.github.io/KaushalHub/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live demo</a>
+              <a class="btn btn-ghost" href="https://github.com/monika200417/KaushalHub" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PDF Genie -->
+        <article class="project card win reverse" id="pdfgenie">
+          <div class="project-media">
+            <a class="glightbox" href="assets/PDFGenie1.png" data-gallery="pdfgenie" data-title="PDF Genie">
+              <img src="assets/PDFGenie1.png" alt="PDF Genie interface for uploading a PDF and asking questions" loading="lazy">
+            </a>
+          </div>
+          <div class="project-body">
+            <ul class="tags"><li>AI · RAG</li><li>Academic Project</li><li>Source code private</li></ul>
+            <h3>PDF Genie</h3>
+            <p class="project-sub">AI-powered PDF question answering assistant.</p>
+            <p>A PDF question-answering system using text extraction, chunking and semantic similarity retrieval, with a React frontend and Node.js backend. Currently adding LLM integration and Retrieval-Augmented Generation (RAG) for context-aware responses.</p>
+            <div class="cols">
+              <div>
+                <h4>Key features</h4>
+                <ul class="plain">
+                  <li>PDF upload &amp; processing</li>
+                  <li>Natural language question answering</li>
+                  <li>Context-based response generation</li>
+                  <li>Semantic search across documents</li>
+                  <li>User-friendly interface</li>
+                  <li>Fast information retrieval</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Tech stack</h4>
+                <ul class="chips small"><li>React</li><li>JavaScript</li><li>CSS</li><li>Node.js</li><li>Express.js</li><li>Google Gemini API</li><li>PDF Parsing Libraries</li><li>Vector Embeddings</li><li>RAG Architecture</li></ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MindTune -->
+        <article class="project card win" id="mindtune">
+          <div class="project-media">
+            <a class="glightbox" href="assets/img/mind1.png" data-gallery="mindtune" data-title="MindTune">
+              <img src="assets/img/mind1.png" alt="MindTune web dashboard screenshot" loading="lazy">
+            </a>
+            <span class="more"><i class="bi bi-images" aria-hidden="true"></i> 11 screenshots</span>
+            <a class="glightbox sr-only" href="assets/img/mind2.png" data-gallery="mindtune">MindTune screenshot 2</a>
+            <a class="glightbox sr-only" href="assets/img/mind3.png" data-gallery="mindtune">MindTune screenshot 3</a>
+            <a class="glightbox sr-only" href="assets/img/mind4.png" data-gallery="mindtune">MindTune screenshot 4</a>
+            <a class="glightbox sr-only" href="assets/img/mind5.png" data-gallery="mindtune">MindTune screenshot 5</a>
+            <a class="glightbox sr-only" href="assets/img/mind6.png" data-gallery="mindtune">MindTune screenshot 6</a>
+            <a class="glightbox sr-only" href="assets/img/mind7.png" data-gallery="mindtune">MindTune screenshot 7</a>
+            <a class="glightbox sr-only" href="assets/img/mind8.png" data-gallery="mindtune">MindTune screenshot 8</a>
+            <a class="glightbox sr-only" href="assets/img/mind9.png" data-gallery="mindtune">MindTune screenshot 9</a>
+            <a class="glightbox sr-only" href="assets/img/mind10.png" data-gallery="mindtune">MindTune screenshot 10</a>
+            <a class="glightbox sr-only" href="assets/img/mind11.png" data-gallery="mindtune">MindTune screenshot 11</a>
+          </div>
+          <div class="project-body">
+            <ul class="tags"><li>Major Project</li><li>Healthcare IoT</li><li>Final Year Project</li></ul>
+            <h3>MindTune</h3>
+            <p class="project-sub">Real-Time Brainwave Detection and Music Therapy System using IoT.</p>
+            <p>MindTune is an IoT-enabled emotional wellness system that uses EEG brainwave signals to detect user emotions in real time. The system processes EEG data using FFT analysis on an ESP32 microcontroller and automatically provides personalized music therapy based on the detected emotional state. Designed as an affordable mental health support solution, it combines neuroscience, embedded systems, and IoT technologies for continuous emotional monitoring and therapeutic intervention.</p>
+            <div class="cols">
+              <div>
+                <h4>Key features</h4>
+                <ul class="plain">
+                  <li>Real-time EEG signal acquisition</li>
+                  <li>Brainwave-based emotional detection</li>
+                  <li>FFT signal processing</li>
+                  <li>Automatic music therapy recommendation</li>
+                  <li>Wi-Fi enabled IoT communication</li>
+                  <li>Continuous emotional monitoring</li>
+                  <li>Affordable health solution</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Tech stack</h4>
+                <ul class="chips small"><li>ESP32</li><li>BioAmp EXG Pill</li><li>Embedded C</li><li>Arduino IDE</li><li>EEG Signal Processing</li><li>FFT Analysis</li><li>Wi-Fi</li><li>Music Therapy Algorithms</li></ul>
+                <h4>Project website</h4>
+                <ul class="chips small"><li>TypeScript</li><li>HTML</li><li>CSS</li></ul>
+              </div>
+            </div>
+            <div class="hardware">
+              <h4>Hardware &amp; prototype</h4>
+              <div class="thumbs">
+                <a class="glightbox" href="assets/mind1.jpeg" data-gallery="mindtune-hw" data-title="Hardware components used"><img src="assets/mind1.jpeg" alt="MindTune hardware components" loading="lazy"></a>
+                <a class="glightbox" href="assets/pro1.jpeg" data-gallery="mindtune-hw" data-title="Initial hardware prototype"><img src="assets/pro1.jpeg" alt="MindTune initial hardware prototype, view 1" loading="lazy"></a>
+                <a class="glightbox" href="assets/pro2.jpeg" data-gallery="mindtune-hw" data-title="Initial hardware prototype"><img src="assets/pro2.jpeg" alt="MindTune initial hardware prototype, view 2" loading="lazy"></a>
+                <a class="glightbox" href="assets/model0.jpeg" data-gallery="mindtune-hw" data-title="Future product concept"><img src="assets/model0.jpeg" alt="MindTune future product concept, view 1" loading="lazy"></a>
+                <a class="glightbox" href="assets/model2.jpeg" data-gallery="mindtune-hw" data-title="Future product concept"><img src="assets/model2.jpeg" alt="MindTune future product concept, view 2" loading="lazy"></a>
+              </div>
+            </div>
+            <p class="future"><strong>Future scope:</strong> mobile app integration, cloud-based emotion history tracking, AI-based emotion classification, caregiver monitoring dashboard, personalized music recommendation engine, and a wearable smart headband product.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://mind-tune-8.vercel.app/dashboard" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live demo</a>
+              <a class="btn btn-ghost" href="https://github.com/monika200417/MindTune" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+              <a class="btn btn-ghost" href="moni.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> Documentation</a>
+            </div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section class="section dark" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">05 · Résumé</p>
+          <h2 id="resume-title">Résumé</h2>
+          <p class="section-sub">A snapshot of my education, technical skills, projects, internships, and professional journey.</p>
+        </header>
+        <div class="resume-grid">
+          <article class="card win span-2">
+            <h3>Professional summary</h3>
+            <p>Full Stack Developer and AI &amp; LLM enthusiast, currently working as a Software Developer at Samify Software Solutions. B.Tech in Information Technology from Andhra University (CGPA 8.36/10). Experience spans business web applications and client websites, MERN stack platforms, PDF question answering and IoT healthcare projects.</p>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-mortarboard" aria-hidden="true"></i> Education</h3>
+            <h4>Bachelor of Technology (Information Technology)</h4>
+            <p>Andhra University, Visakhapatnam<br>2022 – 2026</p>
+            <p class="badge">CGPA: 8.36 / 10</p>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-patch-check" aria-hidden="true"></i> Certifications</h3>
+            <ul class="plain">
+              <li>Google Cloud Generative AI Virtual Internship Certificate</li>
+              <li>NASSCOM Full Stack Developer Internship Certificate</li>
+              <li>AWS Entrepreneurship Training Certificate</li>
+              <li>Python Developer Internship Certificate</li>
+            </ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-trophy" aria-hidden="true"></i> Coding practice &amp; achievements</h3>
+            <ul class="plain">
+              <li>3rd place in an ideathon at Andhra University for the KaushalHub project, with a ₹5,000 award</li>
+              <li>Solved 160+ DSA problems (Python, C#, SQL) on LeetCode and HackerRank</li>
+              <li>4★ Python badge</li>
+            </ul>
+          </article>
+          <article class="card win">
+            <h3><i class="bi bi-person-check" aria-hidden="true"></i> Professional traits</h3>
+            <ul class="plain">
+              <li>Effective communication, with experience explaining technical concepts clearly in hackathons, in college presentations as Class Representative for 4 years, and as an AWS Trainer at another college</li>
+              <li>Keen interest in AI tools, LLMs and evolving software development practices</li>
+            </ul>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn btn-accent" href="MounikaDevavarapu.pdf" target="_blank" rel="noopener" download><i class="bi bi-download" aria-hidden="true"></i> Download résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services" aria-labelledby="serv-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">06 · Services</p>
+          <h2 id="serv-title">What I can do for you</h2>
+          <p class="section-sub">Open to freelance work and collaborations.</p>
+        </header>
+        <div class="service-grid">
+          <article class="card">
+            <i class="bi bi-window-desktop" aria-hidden="true"></i>
+            <h3>Full Stack Web Development</h3>
+            <p>Responsive websites and web applications built with React, Next.js, Node.js, Express and Django.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <h3>AI-Powered Solutions</h3>
+            <p>Document question answering and RAG-based assistants, as in PDF Genie.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-cpu" aria-hidden="true"></i>
+            <h3>IoT Prototyping</h3>
+            <p>Sensor and embedded-systems projects that connect hardware with the web, as in MindTune.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-cloud-check" aria-hidden="true"></i>
+            <h3>AWS &amp; Entrepreneurship Training</h3>
+            <p>Training sessions on AWS cloud concepts and entrepreneurship for students.</p>
+          </article>
+          <article class="card">
+            <i class="bi bi-scissors" aria-hidden="true"></i>
+            <h3>Fashion Designing &amp; Creations</h3>
+            <p>Stitched outfits and creative designs crafted by me.</p>
+          </article>
+        </div>
+
+        <div class="gallery-block">
+          <h3>Training &amp; workshop highlights</h3>
+          <a class="folder glightbox" href="assets/trai1.jpg" data-gallery="training" data-title="AWS and entrepreneurship training session, photo 1" aria-label="Open the training folder, 4 photos">
+            <span class="folder-icon" aria-hidden="true"><i class="bi bi-folder-fill"></i></span>
+            <span class="folder-text">
+              <strong>Training sessions</strong>
+              <span>4 photos · click to open</span>
+            </span>
+          </a>
+          <div hidden>
+            <a class="glightbox" href="assets/trai2.jpg" data-gallery="training" data-title="AWS and entrepreneurship training session, photo 2">AWS and entrepreneurship training session, photo 2</a>
+            <a class="glightbox" href="assets/trai3.jpg" data-gallery="training" data-title="AWS and entrepreneurship training session, photo 3">AWS and entrepreneurship training session, photo 3</a>
+            <a class="glightbox" href="assets/trai4.jpg" data-gallery="training" data-title="AWS and entrepreneurship training session, photo 4">AWS and entrepreneurship training session, photo 4</a>
+          </div>
+        </div>
+
+        <div class="gallery-block">
+          <h3>Fashion design &amp; creation showcase</h3>
+          <a class="folder glightbox" href="assets/pinkfrock.jpg" data-gallery="fashion" data-title="Pink frock stitched by Mounika" aria-label="Open the creations folder, 16 photos">
+            <span class="folder-icon" aria-hidden="true"><i class="bi bi-folder-fill"></i></span>
+            <span class="folder-text">
+              <strong>My creations</strong>
+              <span>16 photos · click to open</span>
+            </span>
+          </a>
+          <div hidden>
+            <a class="glightbox" href="assets/frock2.jpg" data-gallery="fashion" data-title="Frock design, view 2">Frock design, view 2</a>
+            <a class="glightbox" href="assets/frock3.jpg" data-gallery="fashion" data-title="Frock design, view 3">Frock design, view 3</a>
+            <a class="glightbox" href="assets/frock4.jpg" data-gallery="fashion" data-title="Frock design, view 4">Frock design, view 4</a>
+            <a class="glightbox" href="assets/frock5.jpg" data-gallery="fashion" data-title="Frock design, view 5">Frock design, view 5</a>
+            <a class="glightbox" href="assets/frock6.jpg" data-gallery="fashion" data-title="Frock design, view 6">Frock design, view 6</a>
+            <a class="glightbox" href="assets/frockgreen.jpg" data-gallery="fashion" data-title="Green frock">Green frock</a>
+            <a class="glightbox" href="assets/frockyellow.jpg" data-gallery="fashion" data-title="Yellow frock">Yellow frock</a>
+            <a class="glightbox" href="assets/halfs1.jpg" data-gallery="fashion" data-title="Outfit design, view 1">Outfit design, view 1</a>
+            <a class="glightbox" href="assets/halfs2.jpg" data-gallery="fashion" data-title="Outfit design, view 2 (front)">Outfit design, view 2 (front)</a>
+            <a class="glightbox" href="assets/halsfs2back.jpg" data-gallery="fashion" data-title="Outfit design, view 2 (back)">Outfit design, view 2 (back)</a>
+            <a class="glightbox" href="assets/halfs3.jpg" data-gallery="fashion" data-title="Outfit design, view 3">Outfit design, view 3</a>
+            <a class="glightbox" href="assets/bluefrock1.jpg" data-gallery="fashion" data-title="Blue frock, view 1">Blue frock, view 1</a>
+            <a class="glightbox" href="assets/bluefrock11.jpg" data-gallery="fashion" data-title="Blue frock, view 2">Blue frock, view 2</a>
+            <a class="glightbox" href="assets/blouse2.jpg" data-gallery="fashion" data-title="Stitched blouse">Stitched blouse</a>
+            <a class="glightbox" href="assets/top.jpg" data-gallery="fashion" data-title="Stitched top">Stitched top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section dark" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">07 · Contact</p>
+          <h2 id="contact-title">Let’s get in touch</h2>
+          <p class="section-sub">Feel free to reach out to me for collaborations, opportunities, or just a friendly hello!</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="card win">
+              <ul class="info-list">
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><div><h3>Address</h3><p>Anakapalli, Andhra Pradesh, India</p></div></li>
+                <li><i class="bi bi-telephone" aria-hidden="true"></i><div><h3>Call me</h3><p><a href="tel:+916302830566">+91 6302830566</a></p></div></li>
+                <li><i class="bi bi-envelope" aria-hidden="true"></i><div><h3>Email me</h3><p><a href="mailto:monikadevavarapu@gmail.com">monikadevavarapu@gmail.com</a></p></div></li>
+              </ul>
+              <ul class="socials" aria-label="Social links">
+                <li><a href="https://www.linkedin.com/in/monidevavarapu" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/monika200417" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100079944001043" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/moni._dear/?__pwa=1" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <form class="card win" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name-field">Your name</label>
+              <input type="text" name="from_name" id="name-field" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email-field">Your email</label>
+              <input type="email" name="from_email" id="email-field" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="subject-field">Subject</label>
+              <input type="text" name="subject" id="subject-field" required>
+            </div>
+            <div class="field">
+              <label for="message-field">Message</label>
+              <textarea name="message" id="message-field" rows="6" required></textarea>
+            </div>
+            <button class="btn btn-accent" type="submit" id="sendBtn">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  
-  <!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-  <i class="bi bi-arrow-up-short"></i>
-</a>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Moni. All Rights Reserved.</p>
+      <a href="#home">Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a>
+    </div>
+  </footer>
 
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting… | Mounika Devavarapu</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Old multi-page URLs now live as sections of the single-page portfolio.
+    (function () {
+      var map = {
+        'about': '#about', 'resume': '#resume', 'contact': '#contact', 'portfolio': '#projects',
+        'portfolio-details': '#projects', 'mindtune': '#mindtune', 'pdfgenie': '#pdfgenie', 'kaushalhub': '#kaushalhub',
+        'mern-projects': '#kaushalhub', 'ai-projects': '#pdfgenie', 'iotprojects': '#mindtune',
+        'aws-training': '#services', 'creativityotheractivities': '#services', 'fashion-designing': '#services'
+      };
+      var m = location.pathname.match(/([^\/]+?)(?:\.html)?\/?$/);
+      var hash = (m && map[m[1].toLowerCase()]) || '';
+      var base = location.pathname.indexOf('/portfolio/') === 0 ? '/portfolio/' : '/';
+      location.replace(base + 'index.html' + hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>Page moved. <a href="index.html">Go to the portfolio</a>.</p>
+</body>
+</html>
